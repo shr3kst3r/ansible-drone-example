@@ -4,4 +4,4 @@
   action: apt pkg={{item}} state=installed
   with_items:
   - apache2
-  - mysql
+  - mysql-server
