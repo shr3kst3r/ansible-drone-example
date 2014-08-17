@@ -9,7 +9,6 @@ script:
   - sudo pip install https://github.com/willthames/ansible-lint/archive/master.zip
   - sudo apt-get install rubygems
   - sudo gem install serverspec
-  - sudo apt-get install rake
   - sudo gem install rspec
   - sudo ./drone_it
 notify:
