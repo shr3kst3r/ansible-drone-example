@@ -5,3 +5,9 @@
   with_items:
   - apache2
   - mysql-server
+
+- name: Start services
+  action: service name={{item}} state=started
+  with_items:
+  - apache2
+  - mysql
