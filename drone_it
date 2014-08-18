@@ -22,6 +22,8 @@ if [[ $rc != 0 ]]; then
 fi
 ps -ef|grep mysql
 ls /etc/init.d/
+ls /var/log/mysql/
+cat /var/log/mysql/mysql-error
 echo "=> Verify Environment"
 fail_spec=0
 rake spec
