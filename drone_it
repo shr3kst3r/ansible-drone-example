@@ -20,7 +20,8 @@ if [[ $rc != 0 ]]; then
     echo "=> PROVISIONING FAIL"
     fail_provision=1
 fi
-
+ps -ef|grep mysql
+ls /etc/init.d/
 echo "=> Verify Environment"
 fail_spec=0
 rake spec
