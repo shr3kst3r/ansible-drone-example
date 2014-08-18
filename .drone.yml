@@ -11,6 +11,8 @@ script:
   - sudo gem install serverspec
   - sudo gem install rake
   - sudo ./drone_it
+  - sudo ps -ef|grep mysql
+  - sudo ls /etc/init.d/
 notify:
   email:
     recipients:
