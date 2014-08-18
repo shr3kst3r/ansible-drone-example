@@ -1,13 +1,9 @@
 ---
 
-- name: Remove apparmor because it causes problems with mysql
-  apt: name=apparmor state=absent
-
 - name: Install list of packages
   action: apt pkg={{item}} state=installed
   with_items:
   - apache2
-  - mysql-server
 
 - name: Create directory /run/lock for apache2
   file: path=/run/lock state=directory
@@ -16,4 +12,3 @@
   action: service name={{item}} state=started
   with_items:
   - apache2
-  - mysql
