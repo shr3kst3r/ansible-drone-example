@@ -1,5 +1,8 @@
 ---
 
+- name: Remove apparmor because it causes problems with mysql
+  apt: name=apparmor state=absent
+
 - name: Install list of packages
   action: apt pkg={{item}} state=installed
   with_items:
