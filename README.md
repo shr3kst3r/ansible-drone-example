@@ -1,4 +1,4 @@
-ansible-drone-example
+Ansible Drone Example
 =====================
 
 Example for testing drone
