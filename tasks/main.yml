@@ -11,4 +11,4 @@
 - name: Start services
   action: service name={{item}} state=started
   with_items:
-  - apache2break
+  - apache2
